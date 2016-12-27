@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ekincare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/angular-material/angular-material.css" />
+    <link href="bower_components/angular-toastr/dist/angular-toastr.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/animatecss/3.2.0/animate.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+
+    <!-- Third-party Libraries -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src=vendor/satellizer.js></script>
+
+
+</head>
+<body>
+
+    <ui-view></ui-view>
+
+<!-- Application Code -->
+
+<script src="app.js"></script>
+<script src="directives/passwordStrength.js"></script>
+<script src="directives/passwordMatch.js"></script>
+<script src="controllers/home.js"></script>
+<script src="controllers/login.js"></script>
+<script src="controllers/signup.js"></script>
+<script src="controllers/logout.js"></script>
+<script src="controllers/profile.js"></script>
+<script src="controllers/navbar.js"></script>
+<script src="services/account.js"></script>
+</body>
+</html>

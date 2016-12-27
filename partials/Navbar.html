@@ -1,0 +1,847 @@
+
+
+<link rel="stylesheet" media="all"
+          href="https://d3vimd0j9wrtcm.cloudfront.net/assets/application_staff-971d8368c422fcf03480486ba621dd5b28e18efdc715c2e969de0e3fe7351af8.css"
+          data-turbolinks-eval="false" data-turbolinks-track="">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token"
+          content="CBQUmzE5SIqvXNkPBglHPte11LXV4seokJri0aOokvNuUfkoh7oYstCiE3DERihdYo62P6HtkepdjTvvWQPtUQ==">
+    <link href="https://d3vimd0j9wrtcm.cloudfront.net/assets/fav-228b49d023ad9df9bd27ae08625435aec78c35f7b68e5bd230aaa6d9a9df6603.ico"
+          rel="shortcut icon">
+
+
+    <section class="vbox">
+        <header class="bg-primary header header-md navbar navbar-fixed-top-xs box-shadow">
+            <div class="navbar-header aside-md dk">
+                <a class="btn btn-link visible-xs" data-target="#nav,html" data-toggle="class:nav-off-screen,open">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a class="navbar-brand" href="/staff/dashboard">
+                    <img alt="eKincare" class="m-r-sm"
+                         src="https://d3vimd0j9wrtcm.cloudfront.net/assets/logo-3163b2469af775c9baba0cfe49eabab300b4e599a445730502ff6ea0b2755d1e.png">
+                </a>
+                <a class="btn btn-link visible-xs" data-target=".user" data-toggle="dropdown">
+                    <i class="fa fa-cog"></i>
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+                <a class="pull-left pt20 p-r" href="#">Calendar</a>
+                <a class="pull-left mr-md pt20 pl20" href="#">Content</a>
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">-->
+<span class="thumb-sm avatar pull-left">
+<img style="margin-left: 20px;margin-top: 20px;" alt="..."
+     src="https://d3vimd0j9wrtcm.cloudfront.net/assets/avatar-m-6eee006c1c4aabcf44ea49a711e0a7540400036eaa77aedd5865d6a9e99df967.png">
+</span>
+                <li>
+                    <a rel="nofollow" data-method="delete" ui-sref="logout" style="max-height: 15px;">Logout</a>
+                </li>
+
+                <!--</li>-->
+            </ul>
+        </header>
+
+        <section>
+            <section class="hbox stretch">
+                <aside class="bg-light lt b-r b-light aside-md hidden-print hidden-xs" id="nav">
+                    <section class="vbox">
+                        <section class="w-f">
+                            <div>
+                                <!-- nav -->
+                                <nav class="nav-primary hidden-xs">
+                                    <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                    <ul class="nav nav-main" data-ride="collapse">
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/staff_charts/index">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="fa fa-home icon"></i>
+                                                <span class="font-bold">Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader active">
+                                            <a class="auto" href="/customers">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="i i-users3 icon"></i>
+                                                <span class="font-bold">Customers</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/appointments">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="i i-users3 icon"></i>
+                                                <span class="font-bold">Appointments</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/enterprises">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="fa fa-medkit icon"></i>
+                                                <span class="font-bold">Enterprises</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/partners">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="fa fa-group icon"></i>
+                                                <span class="font-bold">Partners</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/promotions">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="fa fa-bell icon"></i>
+                                                <span class="font-bold">Promotions</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/companies">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="fa fa-medkit icon"></i>
+                                                <span class="font-bold">Corporates</span>
+                                            </a>
+                                        </li>
+                                        <li class="start_loader">
+                                            <a class="auto" href="/staff/staff">
+<span class="pull-right text-muted">
+<i class="i i-circle-sm-o text"></i>
+<i class="i i-circle-sm text-active"></i>
+</span>
+                                                <i class="fa fa-medkit icon"></i>
+                                                <span class="font-bold">Staff</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </section>
+                    </section>
+                </aside>
+
+
+                <meta charset="utf-8">
+
+
+                <section class="vbox">
+                    <section>
+                        <div class="clearfix breadcrumb">
+                            <ol class="padder">
+                                Home / Charts
+                                <small class="pull-right">
+                                    contact: 888-678-EKIN (3546) /
+                                    <a href="mailto:help@ekincare.com">help@ekincare.com</a>
+                                </small>
+                            </ol>
+                        </div>
+                        <section class="hbox stretch">
+                            <!-- /.aside -->
+                            <section id="content">
+                                <section class="vbox">
+                                    <section class="scrollable padder" id="staff-wizard">
+                                        <section class="panel panel-default">
+                                            <header class="panel-heading font-bold">Last Week Customer Statistics
+                                            </header>
+                                            <div class="panel-body">
+                                                <div id="total-customers-1ine" style="height:250px">
+                                                    <svg width="990" height="250">
+                                                        <g transform="translate(50,20)">
+                                                            <path class="area"
+                                                                  d="M0,200L153.33333333333331,146.15384615384616L306.66666666666663,0L460,200L613.3333333333333,200L766.6666666666667,146.15384615384616L920,146.15384615384616L920,200L766.6666666666667,200L613.3333333333333,200L460,200L306.66666666666663,200L153.33333333333331,200L0,200Z"></path>
+                                                            <g class="grid">
+                                                                <g class="tick" transform="translate(0,200)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="920" y2="0"></line>
+                                                                    <text dy=".32em" x="-3" y="0"
+                                                                          style="text-anchor: end;"></text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,161.53846153846155)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="920" y2="0"></line>
+                                                                    <text dy=".32em" x="-3" y="0"
+                                                                          style="text-anchor: end;"></text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,123.07692307692308)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="920" y2="0"></line>
+                                                                    <text dy=".32em" x="-3" y="0"
+                                                                          style="text-anchor: end;"></text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,84.61538461538463)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="920" y2="0"></line>
+                                                                    <text dy=".32em" x="-3" y="0"
+                                                                          style="text-anchor: end;"></text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,46.153846153846146)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="920" y2="0"></line>
+                                                                    <text dy=".32em" x="-3" y="0"
+                                                                          style="text-anchor: end;"></text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,7.692307692307687)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="920" y2="0"></line>
+                                                                    <text dy=".32em" x="-3" y="0"
+                                                                          style="text-anchor: end;"></text>
+                                                                </g>
+                                                                <path class="domain" d="M0,0H0V200H0"></path>
+                                                            </g>
+                                                            <path class="line"
+                                                                  d="M0,200L153.33333333333331,146.15384615384616L306.66666666666663,0L460,200L613.3333333333333,200L766.6666666666667,146.15384615384616L920,146.15384615384616"></path>
+                                                            <g class="x axis" transform="translate(0,200)">
+                                                                <g class="tick" transform="translate(0,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Wed 21
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(153.33333333333331,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Thu 22
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(306.66666666666663,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Fri 23
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick" transform="translate(460,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Sat 24
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(613.3333333333333,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Dec 25
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(766.6666666666667,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Mon 26
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick" transform="translate(920,0)"
+                                                                   style="opacity: 1;">
+                                                                    <line y2="6" x2="0"></line>
+                                                                    <text dy=".71em" y="9" x="0"
+                                                                          style="text-anchor: middle;">Tue 27
+                                                                    </text>
+                                                                </g>
+                                                                <path class="domain" d="M0,6V0H920V6"></path>
+                                                            </g>
+                                                            <g class="y axis">
+                                                                <g class="tick" transform="translate(0,200)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="-6" y2="0"></line>
+                                                                    <text dy=".32em" x="-9" y="0"
+                                                                          style="text-anchor: end;">0
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,161.53846153846155)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="-6" y2="0"></line>
+                                                                    <text dy=".32em" x="-9" y="0"
+                                                                          style="text-anchor: end;">5
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,123.07692307692308)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="-6" y2="0"></line>
+                                                                    <text dy=".32em" x="-9" y="0"
+                                                                          style="text-anchor: end;">10
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,84.61538461538463)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="-6" y2="0"></line>
+                                                                    <text dy=".32em" x="-9" y="0"
+                                                                          style="text-anchor: end;">15
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,46.153846153846146)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="-6" y2="0"></line>
+                                                                    <text dy=".32em" x="-9" y="0"
+                                                                          style="text-anchor: end;">20
+                                                                    </text>
+                                                                </g>
+                                                                <g class="tick"
+                                                                   transform="translate(0,7.692307692307687)"
+                                                                   style="opacity: 1;">
+                                                                    <line x2="-6" y2="0"></line>
+                                                                    <text dy=".32em" x="-9" y="0"
+                                                                          style="text-anchor: end;">25
+                                                                    </text>
+                                                                </g>
+                                                                <path class="domain" d="M-6,0H0V200H-6"></path>
+                                                            </g>
+                                                            <circle class="circle" cx="0" cy="200" r="5"></circle>
+                                                            <circle class="circle" cx="153.33333333333331"
+                                                                    cy="146.15384615384616" r="5"></circle>
+                                                            <circle class="circle" cx="306.66666666666663" cy="0"
+                                                                    r="5"></circle>
+                                                            <circle class="circle" cx="460" cy="200" r="5"></circle>
+                                                            <circle class="circle" cx="613.3333333333333" cy="200"
+                                                                    r="5"></circle>
+                                                            <circle class="circle" cx="766.6666666666667"
+                                                                    cy="146.15384615384616" r="5"></circle>
+                                                            <circle class="circle" cx="920" cy="146.15384615384616"
+                                                                    r="5"></circle>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <footer class="panel-footer bg-white">
+                                                <div class="row text-center no-gutter">
+                                                    <div class="col-xs-6 b-r b-light">
+                                                        <p class="h3 font-bold m-t">
+                                                            437
+                                                        </p>
+                                                        <p class="text-muted">Total No. of Customers</p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p class="h3 font-bold m-t">
+                                                            10.07
+                                                        </p>
+                                                        <p class="text-muted">Documents uploaded(%)</p>
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </section>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <section class="panel panel-default" id="staff_checkbox_action">
+                                                    <header class="font-bold padder-v padder" style="font-size:24px;">
+                                                        Number of Customers
+                                                    </header>
+                                                    <div class="panel-body">
+                                                        <div class="col-xs-4 m-b m-t" style="padding:0">
+                                                            <h4>Weight</h4>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="weight_healthy" type="checkbox">
+                                                                    <i></i>
+                                                                    Normal
+
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="weight_overweight"
+                                                                           type="checkbox">
+                                                                    <i></i>
+                                                                    Overweight
+
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="weight_obese" type="checkbox">
+                                                                    <i></i>
+                                                                    Obese
+
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4 m-b m-t" style="padding:0">
+                                                            <h4>Hypertensive</h4>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="hypertensive_healthy"
+                                                                           type="checkbox">
+                                                                    <i></i>
+                                                                    Non Hypertensive
+
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="prehypertensive" type="checkbox">
+                                                                    <i></i>
+                                                                    Pre Hypertensive
+
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="hypertensive" type="checkbox">
+                                                                    <i></i>
+                                                                    Hypertensive
+
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4 m-b m-t" style="padding:0">
+                                                            <h4>Diabetic</h4>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="diabetic_healthy"
+                                                                           type="checkbox">
+                                                                    <i></i>
+                                                                    Non Diabetic
+
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="prediabetic" type="checkbox">
+                                                                    <i></i>
+                                                                    Pre Diabetic
+
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox i-checks employee_filter1">
+                                                                <label>
+                                                                    <input data_value="diabetic" type="checkbox">
+                                                                    <i></i>
+                                                                    Diabetic
+
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 b-t b-light" style="text-align:center;">
+                                                            <br>
+                                                            <p class="h1 font-bold" id="employee_number">0/437</p>
+                                                            <p class="text-muted">Employees</p>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <section class="panel panel-default">
+                                                    <header class="font-bold padder-v padder">
+                                                        <div class="btn-group pull-right">
+                                                            <button class="btn btn-sm btn-default dropdown-toggle"
+                                                                    data-toggle="dropdown">
+                                                                <span class="dropdown-label">All</span>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select weight_gender_dropdown">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="All">All
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="Male">Male
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="Female">Female
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-group pull-right m-r">
+                                                            <button class="btn btn-sm btn-default dropdown-toggle"
+                                                                    data-toggle="dropdown">
+                                                                <span class="dropdown-label">All</span>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select weight_age_dropdown">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="All">All
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="20,30">20 to
+                                                                        30 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="31,40">31 to
+                                                                        40 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="41,50">41 to
+                                                                        50 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="51,60">51 to
+                                                                        60 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="61,70">61 to
+                                                                        70 years
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </header>
+
+                                                        <span style="font-size:24px">Weight</span>
+
+                                                    <div class="panel-body">
+                                                        <div id="d3-donut-weight" style="height:240px">
+                                                            <svg width="350" height="350">
+                                                                <g transform="translate(175,95)">
+                                                                    <g class="arc">
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 3.980102097228898e-15,-65L2.7554552980815448e-15,-45A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(255, 193, 7);"></path>
+                                                                        <text transform="translate(5.204748896376251e-15,-85)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 3.980102097228898e-15,-65L2.7554552980815448e-15,-45A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(255, 193, 7);"></path>
+                                                                        <text transform="translate(5.000000000000005,-70)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                    </g>
+                                                                    <g class="arc">
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 1.8731674450883287,-64.97300396105032L1.2968082312149969,-44.9813104345733A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(236, 32, 69);"></path>
+                                                                        <text transform="translate(1.2248905175923575,-84.99117391364773)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 1.8731674450883287,-64.97300396105032L1.2968082312149969,-44.9813104345733A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(236, 32, 69);"></path>
+                                                                        <text transform="translate(6.224890517592358,-69.99117391364773)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                    </g>
+                                                                    <g class="arc">
+                                                                        <path d="M1.8731674450883287,-64.97300396105032A65,65 0 1,1 -1.1940306291686693e-14,-65L-8.266365894244634e-15,-45A45,45 0 1,0 1.2968082312149969,-44.9813104345733Z"
+                                                                              style="fill: rgb(136, 192, 87);"></path>
+                                                                        <text transform="translate(-1.224890517592366,84.99117391364773)"
+                                                                              dy=".35em" text-anchor="end"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;">
+                                                                            Healthy
+                                                                        </text>
+                                                                        <path d="M1.8731674450883287,-64.97300396105032A65,65 0 1,1 -1.1940306291686693e-14,-65L-8.266365894244634e-15,-45A45,45 0 1,0 1.2968082312149969,-44.9813104345733Z"
+                                                                              style="fill: rgb(136, 192, 87);"></path>
+                                                                        <text transform="translate(3.7751094824076343,99.99117391364773)"
+                                                                              dy=".35em" text-anchor="end"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;">
+                                                                            99.31%
+                                                                        </text>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+
+                                        <div class="row" style="margin-bottom:100px;">
+                                            <div class="col-md-6">
+                                                <section class="panel panel-default">
+                                                    <header class="font-bold padder-v padder">
+                                                        <div class="btn-group pull-right">
+                                                            <button class="btn btn-sm btn-default dropdown-toggle"
+                                                                    data-toggle="dropdown">
+                                                                <span class="dropdown-label">All</span>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select Hypertension_gender_dropdown">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="All">All
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="Male">Male
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="Female">Female
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-group pull-right m-r">
+                                                            <button class="btn btn-sm btn-default dropdown-toggle"
+                                                                    data-toggle="dropdown">
+                                                                <span class="dropdown-label">All</span>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select Hypertension_age_dropdown">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="All">All
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="20,30">20 to
+                                                                        30 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="31,40">31 to
+                                                                        40 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="41,50">41 to
+                                                                        50 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="51,60">51 to
+                                                                        60 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="61,70">61 to
+                                                                        70 years
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </header>
+
+                                                    <span style="font-size:24px">Hypertensive</span>
+                                                    <div class="panel-body">
+                                                        <div id="d3-donut-hypertension" style="height:240px">
+                                                            <svg width="350" height="350">
+                                                                <g transform="translate(175,95)">
+                                                                    <g class="arc">
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 7.460083620342419,-64.57048205161162L5.164673275621675,-44.70264142034651A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(236, 32, 69);"></path>
+                                                                        <text transform="translate(4.885825004821456,-84.85946449290297)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 7.460083620342419,-64.57048205161162L5.164673275621675,-44.70264142034651A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(236, 32, 69);"></path>
+                                                                        <text transform="translate(9.885825004821456,-69.85946449290297)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                    </g>
+                                                                    <g class="arc">
+                                                                        <path d="M7.460083620342419,-64.57048205161162A65,65 0 0,1 8.387674835438235,-64.45655056590414L5.806851809149547,-44.62376577639517A45,45 0 0,0 5.164673275621675,-44.70264142034651Z"
+                                                                              style="fill: rgb(255, 193, 7);"></path>
+                                                                        <text transform="translate(10.362263681993023,-84.36600909954701)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                        <path d="M7.460083620342419,-64.57048205161162A65,65 0 0,1 8.387674835438235,-64.45655056590414L5.806851809149547,-44.62376577639517A45,45 0 0,0 5.164673275621675,-44.70264142034651Z"
+                                                                              style="fill: rgb(255, 193, 7);"></path>
+                                                                        <text transform="translate(15.362263681993023,-69.36600909954701)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                    </g>
+                                                                    <g class="arc">
+                                                                              style="fill: rgb(136, 192, 87);"></path>
+                                                                        <text transform="translate(-5.495748119677978,84.82214777170557)"
+                                                                              dy=".35em" text-anchor="end"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;">
+                                                                            Healthy
+                                                                        </text>
+                                                                        <path d="M8.387674835438235,-64.45655056590414A65,65 0 1,1 4.5791290988821444e-14,-65L3.1701662992261e-14,-45A45,45 0 1,0 5.806851809149547,-44.62376577639517Z"
+                                                                              style="fill: rgb(136, 192, 87);"></path>
+                                                                        <text transform="translate(-0.4957481196779776,99.82214777170557)"
+                                                                              dy=".35em" text-anchor="end"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;">
+                                                                            97.94%
+                                                                        </text>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <section class="panel panel-default">
+                                                    <header class="font-bold padder-v padder">
+                                                        <div class="btn-group pull-right">
+                                                            <button class="btn btn-sm btn-default dropdown-toggle"
+                                                                    data-toggle="dropdown">
+                                                                <span class="dropdown-label">All</span>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select Diabetes_gender_dropdown">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="All">All
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="Male">Male
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="Female">Female
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="btn-group pull-right m-r">
+                                                            <button class="btn btn-sm btn-default dropdown-toggle"
+                                                                    data-toggle="dropdown">
+                                                                <span class="dropdown-label">All</span>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-select Diabetes_age_dropdown">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="All">All
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="20,30">20 to
+                                                                        30 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="31,40">31 to
+                                                                        40 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="41,50">41 to
+                                                                        50 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="51,60">51 to
+                                                                        60 years
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        <input name="a" type="radio" value="61,70">61 to
+                                                                        70 years
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <span style="font-size:24px">Diabetic</span>
+                                                    </header>
+                                                    <div class="panel-body">
+                                                        <div id="d3-donut-diabetes" style="height:240px">
+                                                            <svg width="350" height="350">
+                                                                <g transform="translate(175,95)">
+                                                                    <g class="arc">
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 8.387674835438235,-64.45655056590414L5.806851809149547,-44.62376577639517A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(236, 32, 69);"></path>
+                                                                        <text transform="translate(5.495748119677931,-84.82214777170557)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                        <path d="M3.980102097228898e-15,-65A65,65 0 0,1 8.387674835438235,-64.45655056590414L5.806851809149547,-44.62376577639517A45,45 0 0,0 2.7554552980815448e-15,-45Z"
+                                                                              style="fill: rgb(236, 32, 69);"></path>
+                                                                        <text transform="translate(10.49574811967793,-69.82214777170557)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                    </g>
+                                                                    <g class="arc">
+                                                                        <path d="M8.387674835438235,-64.45655056590414A65,65 0 0,1 10.237464086489545,-64.18873989320741L7.087475136800455,-44.438358387605135A45,45 0 0,0 5.806851809149547,-44.62376577639517Z"
+                                                                              style="fill: rgb(255, 193, 7);"></path>
+                                                                        <text transform="translate(12.179234314567834,-84.12292346031998)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                        <path d="M8.387674835438235,-64.45655056590414A65,65 0 0,1 10.237464086489545,-64.18873989320741L7.087475136800455,-44.438358387605135A45,45 0 0,0 5.806851809149547,-44.62376577639517Z"
+                                                                              style="fill: rgb(255, 193, 7);"></path>
+                                                                        <text transform="translate(17.179234314567836,-69.12292346031998)"
+                                                                              dy=".35em" text-anchor="start"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;"></text>
+                                                                    </g>
+                                                                    <g class="arc">
+                                                                        <path d="M10.237464086489545,-64.18873989320741A65,65 0 1,1 -1.1940306291686693e-14,-65L-8.266365894244634e-15,-45A45,45 0 1,0 7.087475136800455,-44.438358387605135Z"
+                                                                              style="fill: rgb(136, 192, 87);"></path>
+                                                                        <text transform="translate(-6.7147107570310265,84.7343652802652)"
+                                                                              dy=".35em" text-anchor="end"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;">
+                                                                            Healthy
+                                                                        </text>
+                                                                        <path d="M10.237464086489545,-64.18873989320741A65,65 0 1,1 -1.1940306291686693e-14,-65L-8.266365894244634e-15,-45A45,45 0 1,0 7.087475136800455,-44.438358387605135Z"
+                                                                              style="fill: rgb(136, 192, 87);"></path>
+                                                                        <text transform="translate(-1.7147107570310265,99.7343652802652)"
+                                                                              dy=".35em" text-anchor="end"
+                                                                              style="fill: rgb(120, 130, 136); font-size: 11px;">
+                                                                            97.48%
+                                                                        </text>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                                <a class="hide nav-off-screen-block" data-target="#nav"
+                                   data-toggle="class:nav-off-screen" href="#"></a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="https://d3vimd0j9wrtcm.cloudfront.net/assets/application_staff-d47bf0ccf981265242f35d1eee2b964aff0715d56a109ca1d5cc0eaee4ed005d.js"
+            data-turbolinks-eval="false" data-turbolinks-track=""></script>
+    <div class="donut-tool-tip"></div>
+    <div class="donut-tool-tip"></div>
+    <div class="donut-tool-tip"
+         style="display: none; left: 980px; top: 335px; opacity: 1; width: 150px; color: rgb(255, 255, 255);"></div>
+    <div class="d3-tip" style="position: absolute; opacity: 0;"></div>
