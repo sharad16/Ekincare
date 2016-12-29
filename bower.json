@@ -1,5 +1,5 @@
 {
-  "name": "Ekincare",
+  "name": "ekincare",
   "authors": [
     "sharad16 <sharadvanjari5@gmail.com>"
   ],
@@ -26,6 +26,6 @@
     "angular-animate": "^1.6.1",
     "angular": "^1.6.1",
     "angular-local-storage": "^0.5.2",
-    "ngstorage": "^0.3.11"
+    "angularLocalStorage": "ngStorage#^0.3.2"
   }
 }
